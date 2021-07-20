@@ -12,7 +12,7 @@ import numpy as np
 import pickle
 from sys import argv
 
-args = argv()
+args = argv
 
 #main_dir = argv[1] #'C:/Users/luopi/scRNAseq_docker/'
 

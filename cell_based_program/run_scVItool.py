@@ -7,10 +7,12 @@ import pickle
 import scvi
 import scanpy as sc
 
-main_dir = 'path_to_data_folder'
-out_dir = 'path_to_save_output'
+from sys import argv
 
-dataset = 'GSE72056'
+main_dir = argv[1] #'path_to_data_folder'
+out_dir = "cell_based_program/output"#'path_to_save_output'
+
+dataset = argv[2] #'GSE72056'
 
 DataPath = main_dir+dataset+'/Data.csv.gz'
 LabelsPath = main_dir+dataset+'/Labels.csv'
@@ -25,7 +27,7 @@ the cells in the count matrix
 CV_folds.pkl : pickle file that contains index used in the cross-validation
 """
 
-os.chdir(OutputDir)
+#os.chdir(OutputDir)
 
 Data = pd.read_csv(DataPath, index_col=0)
 Label = pd.read_csv(LabelsPath, header=0, index_col=None)
@@ -83,6 +85,6 @@ for i in range(np.squeeze(nfolds)):
 
 pred = pd.DataFrame(pred)
 tot_time = pd.DataFrame(tot)
-
+os.chdir(OutputDir)
 pred.to_csv("scVI_Pred_Labels.csv", index = False)
 tot_time.to_csv("scVI_Total_Time.csv", index = False)
