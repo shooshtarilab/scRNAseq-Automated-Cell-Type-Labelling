@@ -80,8 +80,11 @@ cell_based_program/* #run cell based labelling algorithms
         #args1 is path to data
         #args2 is the dataset
     other_scripts/results_table.ipynb #combine predictions into a single file
-        #TODO check paths
+        #TODO this only gathers a single dataset right now. 
+        #either make it take a command line arg or do a loop
+    #TODO need to update output directory of the time_sim.py and subsequent scripts
     other_scripts/time_sim.py #combine prediction time files
+        #TODO might need to update dataset names
     other_scripts/time_bar_plot.ipynb #make the supplemental bar plots
         #this reads in my runtimes as an npy file
         #TODO make sure that the cluster labelling timing scripts make an npy file

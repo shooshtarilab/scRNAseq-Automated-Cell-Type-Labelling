@@ -10,7 +10,7 @@ dataset_list = ['GSE72056','GSE75688','GSE81861','GSE115978','GSE84465','GSE1162
 column_name = ['Tirosh_Melanoma','Chung_BC','Li_CRC','JA_Melanoma','Darmanis_GBM',
                'vanGalan_AML','Lambrechts_LC','Peng_PC']
 
-time_dir = 'path_to_prediction_folder'
+time_dir = 'cell_based_progam/output'#path_to_prediction_folder'
 
 tt_list = ["CaSTLe","Cell_BLAST","kNN9","LAmbDA","LDA","LDArej","NMC","RF",
            "scmapcell","scmapcluster","scPred","SingleCellNet","SVM","SVMrej"]
@@ -63,6 +63,7 @@ for i in range(len(dataset_list)):
 # result.to_csv('Ping_total_std.tsv', sep='\t')
 
 os.chdir('./log_time/')
+#TODO where should this go?
 
 np.save("mean_total.npy",mtx)
 np.save("std_total.npy",Std)
