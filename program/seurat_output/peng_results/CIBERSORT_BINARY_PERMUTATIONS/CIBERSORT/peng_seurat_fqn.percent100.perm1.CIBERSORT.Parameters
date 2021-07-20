@@ -1,0 +1,18 @@
+
+#################################################################
+# Javier Diaz -- 
+# javier.diazmejia@gmail.com
+#################################################################
+
+
+#################################################################
+######################### PARAMETERS ############################
+#################################################################
+
+/scratch/echris3/projects/labelling_program/bin/perl_programs/obtains_CIBERSORT_for_MatrixColumns.pl
+-infile_matrix 	tme_inputs/peng_pancreatic/seurat_fqn_E_xy_matrix.tsv
+-infile_classes 	seurat_outputs/peng_results/GMT_PERMUTATIONS/peng_seurat_fqn.percent100.perm1.gmt
+-path_outfiles 	seurat_outputs/peng_results/CIBERSORT_BINARY_PERMUTATIONS/
+-prefix_outfiles 	peng_seurat_fqn.percent100.perm1
+-nperm 	1000
+-classes_type 	gmt

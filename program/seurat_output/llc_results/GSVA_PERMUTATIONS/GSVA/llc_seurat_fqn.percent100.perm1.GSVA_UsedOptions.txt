@@ -1,0 +1,10 @@
+Tue Dec 15 2020 14:51:47
+
+
+Options used:
+-i	infile_mat	tme_inputs/lambrechts_lung_carcinoma/seurat_fqn_E_xy_matrix.tsv
+-c	infile_gmt	seurat_output/llc_results/GMT_PERMUTATIONS/llc_seurat_fqn.percent100.perm1.gmt
+-o	outdir	seurat_output/llc_results/GSVA_PERMUTATIONS/
+-p	prefix_outfiles	llc_seurat_fqn.percent100.perm1
+-e	pvalue_cutoff	0.05
+-f	fdr_cutoff	0.1

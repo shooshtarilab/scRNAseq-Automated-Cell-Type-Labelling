@@ -1,0 +1,10 @@
+Tue Dec 15 2020 15:06:31
+
+
+Options used:
+-i	infile_mat	tme_inputs/van_galen/filtered_seurat_fqn_E_xy_matrix.tsv
+-c	infile_signature	seurat_output/vg_results_filtered/GMT_PERMUTATIONS/vg_seurat_fqn.percent100.perm1.gmt
+-t	type_signature	gmt
+-g	infile_cell_types	tme_inputs/van_galen/filtered_seurat_gold_std.tsv
+-o	outdir	seurat_output/vg_results_filtered/METANEIGHBOR_BINARY_PERMUTATIONS/
+-p	prefix_outfiles	vg_seurat_fqn.percent100.perm1

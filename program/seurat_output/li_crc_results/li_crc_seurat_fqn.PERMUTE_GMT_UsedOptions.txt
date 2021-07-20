@@ -1,0 +1,9 @@
+Wed Dec 09 2020 12:07:48
+
+
+Options used:
+-c	infile_gmt	tme_inputs/li_crc/gene_signatures.gmt
+-o	outdir	seurat_output/li_crc_results
+-r	iterations	1-1
+-s	sample_percentages	100,100,0
+-p	prefix_outfiles	li_crc_seurat_fqn

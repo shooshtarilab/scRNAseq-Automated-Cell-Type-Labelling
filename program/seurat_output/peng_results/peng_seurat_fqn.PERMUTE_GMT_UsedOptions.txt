@@ -1,0 +1,9 @@
+Wed Dec 16 2020 09:30:19
+
+
+Options used:
+-c	infile_gmt	tme_inputs/peng_pancreatic/gene_signatures.gmt
+-o	outdir	seurat_outputs/peng_results
+-r	iterations	1-1
+-s	sample_percentages	100,100,0
+-p	prefix_outfiles	peng_seurat_fqn

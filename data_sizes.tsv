@@ -1,0 +1,5 @@
+	Chung (Breast)	Darmanis (Glioblastoma)	Jerby Arnon (Melanoma)	Li (Colorectal)	Lambrechts (Lung)	Peng (Pancreatic)	Tirosh (Metastatic Melanoma)	Van Galen (AML)
+Cells	515	3589	6879	359	51775	57530	4645	21933
+Genes	57915	23465	23686	57241	22533	24005	23686	27899
+Cell Types	5	7	9	5	17	10	7	6
+Technology	Fluidigm C1	SMART-seq2	SMART-seq2	Fluidigm C1	10x Genomics	10x Genomics	SMART-seq2	Seq-Well

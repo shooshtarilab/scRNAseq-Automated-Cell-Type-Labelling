@@ -1,0 +1,9 @@
+Tue Dec 15 2020 14:49:52
+
+
+Options used:
+-c	infile_gmt	tme_inputs/lambrechts_lung_carcinoma/gene_signatures.gmt
+-o	outdir	seurat_output/llc_results
+-r	iterations	1-1
+-s	sample_percentages	100,100,0
+-p	prefix_outfiles	llc_seurat_fqn

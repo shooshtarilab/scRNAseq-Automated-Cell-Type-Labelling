@@ -1,0 +1,20 @@
+
+#################################################################
+# Javier Diaz -- 
+# javier.diazmejia@gmail.com
+#################################################################
+
+
+#################################################################
+######################### PARAMETERS ############################
+#################################################################
+
+/home/erik/Desktop/program/bin/perl_programs/obtains_GSEA_for_MatrixColumns.pl
+-infile_matrix 	tme_inputs/tirosh_melanoma/seurat_fqn_E_xy_matrix.tsv
+-infile_classes 	seurat_output/tm_results/GMT_PERMUTATIONS/tm_seurat_fqn.percent100.perm1.gmt
+-path_outfiles 	seurat_output/tm_results/GSEA_PERMUTATIONS/
+-prefix_outfiles 	tm_seurat_fqn.percent100.perm1
+-cutoff_print_p 	0.01
+-cutoff_print_q 	0.25
+-nperm 	1000
+-use_universe 	i

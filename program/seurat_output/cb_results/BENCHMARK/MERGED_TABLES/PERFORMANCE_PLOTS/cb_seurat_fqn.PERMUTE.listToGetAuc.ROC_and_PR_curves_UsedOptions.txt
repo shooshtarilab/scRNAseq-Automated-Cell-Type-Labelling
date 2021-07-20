@@ -1,0 +1,12 @@
+Wed Dec 09 2020 11:52:28
+
+
+Options used:
+-i	infile_mat	seurat_output/cb_results/BENCHMARK/MERGED_TABLES/cb_seurat_fqn.PERMUTE.listToGetAuc.merged.tsv
+-c	infile_colours	NA
+-o	outdir	seurat_output/cb_results/BENCHMARK/MERGED_TABLES/PERFORMANCE_PLOTS
+-p	prefix_outfiles	cb_seurat_fqn.PERMUTE.listToGetAuc
+-l	lwd	NA
+-w	print_plot_ticks_labels_legend	NA
+-x	cex_labels	NA
+-d	graphics_device	NA

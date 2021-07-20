@@ -1,0 +1,9 @@
+Tue Dec 15 2020 15:04:46
+
+
+Options used:
+-c	infile_gmt	tme_inputs/van_galen/combined_gene_sigs.gmt
+-o	outdir	seurat_output/vg_results_filtered
+-r	iterations	1-1
+-s	sample_percentages	100,100,0
+-p	prefix_outfiles	vg_seurat_fqn

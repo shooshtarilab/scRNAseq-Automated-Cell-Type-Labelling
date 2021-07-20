@@ -1,0 +1,12 @@
+MetaNeighborUS	HSC_PROG	GMP	MYELOID	HSC_PROG_LIKE	GMP_LIKE	MYELOID_LIKE
+clust2	0.75	0.55	0.2	0.9	0.35	0.35
+clust3	0.4	0	1	0.3	0.1	0.9
+clust4	1	0.3	0	0.85	0.25	0.35
+clust6	0.15	0.45	0.95	0.05	0.4	0.8
+clust7	0.7	0.3	0.45	0.85	0.05	0.55
+clust8	0.1	0.6	0.8	0	0.5	0.95
+clust9	0.85	0.25	0.25	1	0.1	0.4
+clust11	0.7	0.9	0.05	0.5	1	0.1
+clust13	0.3	0.65	0.5	0.2	0.95	0.7
+clust15	0.55	0.95	0.1	0.45	0.8	0.3
+clust16	0.25	0.7	0.85	0.15	0.55	0.75
