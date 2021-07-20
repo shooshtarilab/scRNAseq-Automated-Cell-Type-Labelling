@@ -3,12 +3,23 @@
 data/...
     #counts and fqn inputs for scripts
     #fqn are outputs of the normalisation script
+    #TODO li_crc has both gene and ensemble.
+        #avg_expr output/gene sigs are gene_ensemble
+        #what do other algorithms use as input?
+            #TODO check adobo and sccatch
 
-data/normalise_fqn.py #adobo normalisation script
-    #TODO is there any reason to run this separate from the adobo predictions?
-    #will need to adapt this from compute canada
-    /home/echris3/projects/def-pshoosht/echris3/adobo/normalise_fqn.py
-    #reads in counts and normalises with fqn, then saves fqn. 
+program/runs_adobo.py #run adobo predictions and saves fqn normalised data
+    (time python program/runs_adobo.py ./data/chung_breast/counts.tsv.xz ./data/chung_breast/chung_breast_clusters.csv ./program/output/cb_adobo.tsv) 2> ./times/cb_adobo.txt
+    #TODO change these paths to the other datasets
+    (time python program/runs_adobo.py ./data/chung_breast/counts.tsv.xz ./data/chung_breast/chung_breast_clusters.csv ./program/output/cb_adobo.tsv) 2> ./times/cb_adobo.txt
+    (time python program/runs_adobo.py ./data/chung_breast/counts.tsv.xz ./data/chung_breast/chung_breast_clusters.csv ./program/output/cb_adobo.tsv) 2> ./times/cb_adobo.txt
+    (time python program/runs_adobo.py ./data/chung_breast/counts.tsv.xz ./data/chung_breast/chung_breast_clusters.csv ./program/output/cb_adobo.tsv) 2> ./times/cb_adobo.txt
+    (time python program/runs_adobo.py ./data/chung_breast/counts.tsv.xz ./data/chung_breast/chung_breast_clusters.csv ./program/output/cb_adobo.tsv) 2> ./times/cb_adobo.txt
+    (time python program/runs_adobo.py ./data/chung_breast/counts.tsv.xz ./data/chung_breast/chung_breast_clusters.csv ./program/output/cb_adobo.tsv) 2> ./times/cb_adobo.txt
+    (time python program/runs_adobo.py ./data/chung_breast/counts.tsv.xz ./data/chung_breast/chung_breast_clusters.csv ./program/output/cb_adobo.tsv) 2> ./times/cb_adobo.txt
+    (time python program/runs_adobo.py ./data/chung_breast/counts.tsv.xz ./data/chung_breast/chung_breast_clusters.csv ./program/output/cb_adobo.tsv) 2> ./times/cb_adobo.txt
+    #NOTE adobo sometimes throws an error when predicting cell types on macOS 
+        # installations. Recommend using linux.
     #need a script that saves the filtered counts? or just provide filtered and prepped counts maybe
 
 program/tme_inputs/avg_expr.ipynb #get avg expression from counts/fqn
@@ -33,11 +44,6 @@ program/scripts/*.sh #run cluster labelling algorithms
         #could clone javier's git repo in the bash script
             https://github.com/jdime/scRNAseq_cell_cluster_labeling.git
         #need the tme_inputs folder for adobo, sccatch, and javier's stuff.
-    program/runs_adobo.py #run adobo predictions
-        program/adobo_scripts/*.sh
-        #TODO merge bash scripts into one
-            #TODO fix tm script
-            #TODO fix input paths for all other scripts
     
     program/sccatch/run_sccatch.R #sccatch
         program/sccatch/*.sh
