@@ -9,15 +9,18 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 from sklearn.neighbors import NearestCentroid
 from sklearn.ensemble import RandomForestClassifier
+from sys import argv
 import pickle
 
 import warnings
 warnings.filterwarnings("ignore")
 
-main_dir = 'path_to_data_folder'
-out_dir = 'path_to_save_output'
+args = argv
 
-dataset = 'GSE72056'
+main_dir = args[1] #'path_to_data_folder'
+out_dir = "cell_based_program/output"#'path_to_save_output'
+
+dataset = args[2] #'GSE72056'
 
 def main():
     Spath = out_dir+dataset+'/'
@@ -55,8 +58,10 @@ def ReadData(DataPath, LabelsPath, CV_Path):
     col = CV_data['col']
 
     # read the data
-    data = pd.read_csv(DataPath,index_col=0,sep=',')
+    data = pd.read_csv(DataPath,index_col=0,sep='\t')
+    data = data.T
     labels = pd.read_csv(LabelsPath, header=0,index_col=None, sep=',', usecols = col)
+    #TODO see if this command will read the labels properly
 
     return data, labels, CV_data
 

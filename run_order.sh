@@ -68,9 +68,17 @@ cell_based_program/* #run cell based labelling algorithms
             #TODO right now the counts files are in a subfolder
             #might need to change this
     Python_methods.py #run most python methods
-        #TODO same as R methods, gotta update paths
+        #args1 is path to data
+        #args2 is the dataset
+            #TODO right now the counts files are in a subfolder
+            #might need to change this
+            #TODO need to make sure this reads the labels properly
     run_LAmbDA.py
+        #args1 is path to data
+        #args2 is the dataset
     run_scVItool.py
+        #args1 is path to data
+        #args2 is the dataset
     other_scripts/results_table.ipynb #combine predictions into a single file
         #TODO check paths
     other_scripts/time_sim.py #combine prediction time files

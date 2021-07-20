@@ -9,6 +9,7 @@ import scipy.io as sio
 import optunity as opt
 from tensorflow.contrib.tensor_forest.python import tensor_forest
 from tensorflow.python.ops import resources
+from sys import argv
 
 def run_LAmbDA(DataPath, LabelsPath, CV_Path, OutputDir):
 
@@ -270,10 +271,12 @@ def run_LAmbDA2(gamma, delta, tau, prc_cut, bs_prc, num_trees, max_nodes):
 	tf.reset_default_graph();
 	return(acc)
 
-main_dir = 'path_to_data_folder'
-out_dir = 'path_to_save_output'
+args = argv
 
-dataset = 'GSE72056'
+main_dir = args[1] #'path_to_data_folder'
+out_dir = "cell_based_program/output"#'path_to_save_output'
+
+dataset = args[2] #'GSE72056'
 
 run_LAmbDA(main_dir+dataset+'/Data.csv.gz',
            main_dir+dataset+'/Labels.csv',
