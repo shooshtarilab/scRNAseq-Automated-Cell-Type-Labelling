@@ -14,8 +14,8 @@ out_dir = "cell_based_program/output"#'path_to_save_output'
 
 dataset = argv[2] #'GSE72056'
 
-DataPath = main_dir+dataset+'/Data.csv.gz'
-LabelsPath = main_dir+dataset+'/Labels.csv'
+DataPath = main_dir+dataset+'/counts.tsv.xz'
+LabelsPath = main_dir+dataset+'/clusters.csv'
 CV_Path = main_dir+dataset+'/CV_folds.pkl'
 OutputDir = out_dir+dataset+'/' # Output directory
 

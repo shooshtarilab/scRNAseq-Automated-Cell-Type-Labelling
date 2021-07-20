@@ -27,8 +27,8 @@ def main():
     Path(Spath).mkdir(parents=True, exist_ok=True)
     os.chdir(Spath) # Output directory
 
-    data, labels, CV_data = ReadData(main_dir+dataset+'/Data.csv.gz',
-                                     main_dir+dataset+'/Labels.csv',
+    data, labels, CV_data = ReadData(main_dir+dataset+'/counts.tsv.xz',
+                                     main_dir+dataset+'/clusters.csv',
                                      main_dir+dataset+'/CV_folds.pkl')
                                      
     """
@@ -47,8 +47,8 @@ def main():
     NMC(data, labels, CV_data)
     RF(data, labels, CV_data)
     ACTINN(data, labels, CV_data)
-    Cell_BLAST(main_dir+dataset+'/Data.csv.gz',
-               main_dir+dataset+'/Labels.csv',
+    Cell_BLAST(main_dir+dataset+'/counts.tsv.xz',
+               main_dir+dataset+'/clusters.csv',
                CV_data)
 
 def ReadData(DataPath, LabelsPath, CV_Path):

@@ -16,8 +16,8 @@ source(file.path(main_dir, 'R_func','singleCellNet.R'))
 source(file.path(main_dir, 'R_func','SingleR.R'))
 source(file.path(main_dir, 'R_func','scPred.R'))
 
-DataPath <- file.path(input_dir,dataset,'Data.csv.gz')
-LabelsPath <- file.path(input_dir,dataset,'Labels.csv')
+DataPath <- file.path(input_dir,dataset,'counts.tsv.xz')
+LabelsPath <- file.path(input_dir,dataset,'clusters.csv')
 CV_RDataPath <- file.path(input_dir,dataset,'CV_folds.RData')
 OutputPath <- file.path(out_dir,dataset,)
 

@@ -30,20 +30,19 @@ program/tme_inputs/avg_expr.ipynb #get avg expression from counts/fqn
     #TODO some of these were run on the cluster because of memory issues
     #TODO maybe make this into a python script instead of ipynb
 
-program/scripts/*.sh #run cluster labelling algorithms
-    #TODO there are two van galen scripts, only publish one
+export PERL5LIB=./program/bin/perl_modules
+sh program/run.sh #run cluster labelling algorithms
     #Cibersort and GSEA have licenses, i can't distribute them
         #cibersort: https://cibersort.stanford.edu/download.php
         #gsea: http://software.broadinstitute.org/gsea/downloads.jsp
-    #these scripts just need the compute canada stuff at the top removed
-        #need r/3.5.2, perl/5.22.2, java/1.8
-            #optparse, vioplot, GSA, data.table, precrec, ROCR, Seurat, dplyr, Rserve, e1071, colorRamps, stats
-            #bioconductor: preprocessCore, GSVA, qvalue
-            #perl_modules from javier's repo needs to be in the PERL5LIB env
-                #can possibly do this in a main wrapper script?
-        #could clone javier's git repo in the bash script
-            https://github.com/jdime/scRNAseq_cell_cluster_labeling.git
-        #need the tme_inputs folder for adobo, sccatch, and javier's stuff.
+    #need r/3.5.2, perl/5.22.2, java/1.8
+        #optparse, vioplot, GSA, data.table, precrec, ROCR, Seurat, dplyr, Rserve, e1071, colorRamps, stats
+        #bioconductor: preprocessCore, GSVA, qvalue
+        #perl_modules from javier's repo needs to be in the PERL5LIB env
+            #can possibly do this in a main wrapper script?
+    #could clone javier's git repo in the bash script
+        https://github.com/jdime/scRNAseq_cell_cluster_labeling.git
+    #need the tme_inputs folder for adobo, sccatch, and javier's stuff.
     
     program/sccatch/run_sccatch.R #sccatch
         program/sccatch/*.sh
@@ -55,7 +54,6 @@ program/scripts/*.sh #run cluster labelling algorithms
         # compute canada. Might be able to fix that locally, but it'll give different results
 
 cell_based_program/* #run cell based labelling algorithms
-    #need to get ALL of ping's scripts and get them to output into the right folder
     #TODO change his scripts to read in genes x cells and transpose
     #TODO see what format his labels take in (column names, etc)
     CV.R #Generate cross validation folds for R based methods
@@ -105,6 +103,7 @@ result_gathering.ipynb #gather predictions from cluster labelling outputs
     #just add the cluster mapping and cell-based matching to this python script
     #TODO #map cluster predictions to cell predictions
     #TODO #merge cell-based predictions with per-cell cluster predictions
+        #TODO point to the proper output directory for ping's results
 
 
 #TODO #bootstrap the results
