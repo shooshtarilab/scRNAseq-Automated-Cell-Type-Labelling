@@ -40,6 +40,9 @@ def run_adobo(df, clusterfile, methodname,outfile, symbol_switch=False, norm_tec
     
     #normalisation
     ad.normalize.norm(exp, method = norm_tech)
+    ndf = exp.norm_data[norm_tech]['data']
+    ndf.columns = cbdf.columns
+    ndf.to_csv(df.rsplit('/',1)[0]+"fqn.tsv.xz",sep="\t")
     
     #make the dict structure
     #exp.norm_data[norm_tech]['clusters'] = {}
