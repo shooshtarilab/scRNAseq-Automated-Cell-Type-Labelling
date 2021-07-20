@@ -1,21 +1,24 @@
 rm(list = ls())
 
-main_dir <- 'path_to_script'
-out_dir <- 'path_to_save_output'
+args <- commandArgs(trailingOnly=TRUE)
 
-dataset <- 'GSE72056'
+main_dir <- "cell_based_program"
+out_dir <- file.path(main_dir,"output")
 
-source(file.path(main_dir, 'R_func/CaSTLe.R'))
-source(file.path(main_dir, 'R_func/CHETAH.R'))
-source(file.path(main_dir, 'R_func/scID.R'))
-source(file.path(main_dir, 'R_func/scmap.R'))
-source(file.path(main_dir, 'R_func/singleCellNet.R'))
-source(file.path(main_dir, 'R_func/SingleR.R'))
-source(file.path(main_dir, 'R_func/scPred.R'))
+dataset <- args[1] #the dataset to run
+input_dir <- args[2] #path to the folder with inputs 
 
-DataPath <- file.path(main_dir,dataset,'Data.csv.gz')
-LabelsPath <- file.path(main_dir,dataset,'Labels.csv')
-CV_RDataPath <- file.path(main_dir,dataset,'CV_folds.RData')
+source(file.path(main_dir, 'R_func','CaSTLe.R'))
+source(file.path(main_dir, 'R_func','CHETAH.R'))
+source(file.path(main_dir, 'R_func','scID.R'))
+source(file.path(main_dir, 'R_func','scmap.R'))
+source(file.path(main_dir, 'R_func','singleCellNet.R'))
+source(file.path(main_dir, 'R_func','SingleR.R'))
+source(file.path(main_dir, 'R_func','scPred.R'))
+
+DataPath <- file.path(input_dir,dataset,'Data.csv.gz')
+LabelsPath <- file.path(input_dir,dataset,'Labels.csv')
+CV_RDataPath <- file.path(input_dir,dataset,'CV_folds.RData')
 OutputPath <- file.path(out_dir,dataset,)
 
 
@@ -26,7 +29,8 @@ OutputPath <- file.path(out_dir,dataset,)
 # CV_folds.RData : file that contains index and parameters used in the cross-validation
 
 
-Data <- read.csv(DataPath,row.names = 1)
+Data <- read.table(DataPath,row.names = 1,header=T,sep='\t')
+Data <- t(Data)
 Labels <- as.matrix(read.csv(LabelsPath))
 
 # Comment out the algorithms that you don't need

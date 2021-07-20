@@ -63,9 +63,10 @@ cell_based_program/* #run cell based labelling algorithms
         #arg1 is the path of the folder containing the Rdata file 
             #pkl is saved in the same directory
     R_methods.R #run R methods for cell type prediction
-        #TODO make 'path_to_data_folder' and 'path_to_save_output' either 
-        #args or relative paths to the right folders
-        #TODO data is read in as a csv, mine are in tsv
+        #arg1 is the dataset to run
+        #arg2 is the relative path to ./data/...
+            #TODO right now the counts files are in a subfolder
+            #might need to change this
     Python_methods.py #run most python methods
         #TODO same as R methods, gotta update paths
     run_LAmbDA.py
