@@ -278,8 +278,8 @@ out_dir = "cell_based_program/output"#'path_to_save_output'
 
 dataset = args[2] #'GSE72056'
 
-run_LAmbDA(main_dir+dataset+'/Data.csv.gz',
-           main_dir+dataset+'/Labels.csv',
+run_LAmbDA(main_dir+dataset+'/counts.tsv.xz',
+           main_dir+dataset+'/clusters.csv',
            main_dir+dataset+'/CV_folds.pkl',
            out_dir+dataset+'/' # Output directory
            )
