@@ -1,0 +1,9 @@
+Wed Dec 09 2020 12:10:44
+
+
+Options used:
+-c	infile_gmt	tme_inputs/tirosh_melanoma/gene_signatures.gmt
+-o	outdir	seurat_output/tm_results
+-r	iterations	1-1
+-s	sample_percentages	100,100,0
+-p	prefix_outfiles	tm_seurat_fqn

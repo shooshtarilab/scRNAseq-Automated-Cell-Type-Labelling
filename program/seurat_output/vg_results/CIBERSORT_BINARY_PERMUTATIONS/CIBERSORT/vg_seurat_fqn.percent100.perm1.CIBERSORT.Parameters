@@ -1,0 +1,18 @@
+
+#################################################################
+# Javier Diaz -- 
+# javier.diazmejia@gmail.com
+#################################################################
+
+
+#################################################################
+######################### PARAMETERS ############################
+#################################################################
+
+/home/erik/Desktop/program/bin/perl_programs/obtains_CIBERSORT_for_MatrixColumns.pl
+-infile_matrix 	tme_inputs/van_galen/filtered_seurat_fqn_E_xy_matrix.tsv
+-infile_classes 	seurat_output/vg_results_filtered/GMT_PERMUTATIONS/vg_seurat_fqn.percent100.perm1.gmt
+-path_outfiles 	seurat_output/vg_results_filtered/CIBERSORT_BINARY_PERMUTATIONS/
+-prefix_outfiles 	vg_seurat_fqn.percent100.perm1
+-nperm 	1000
+-classes_type 	gmt

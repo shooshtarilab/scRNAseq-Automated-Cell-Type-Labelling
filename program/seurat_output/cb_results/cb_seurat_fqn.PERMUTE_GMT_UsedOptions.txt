@@ -1,0 +1,9 @@
+Wed Dec 09 2020 11:50:54
+
+
+Options used:
+-c	infile_gmt	tme_inputs/chung_breast/gene_signatures.gmt
+-o	outdir	seurat_output/cb_results
+-r	iterations	1-1
+-s	sample_percentages	100,100,0
+-p	prefix_outfiles	cb_seurat_fqn

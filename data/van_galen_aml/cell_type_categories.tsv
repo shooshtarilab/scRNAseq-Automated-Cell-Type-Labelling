@@ -1,0 +1,26 @@
+Cell Labels	Categories	erik
+B	Immune	Immune
+T	Immune	Immune
+CDC	Immune	Immune
+CDC_LIKE	Tumour	Tumour
+CTL (cytotoxic T cell)	Immune	Immune
+EARLYERY	Blood	Stem/Progenitor
+GMP	Immune	Stem/Progenitor
+GMP_LIKE	Tumour	Tumour
+HSC	Immune	Stem/Progenitor
+HSC_LIKE	Tumour	Tumour
+LATEERY	Blood	Stem/Progenitor
+MONO	Immune	Immune
+MONO_LIKE	Tumour	Tumour
+NK	Immune	Immune
+PDC	Immune	Immune
+PLASMA	Immune	Immune
+PROB	Immune	Stem/Progenitor
+PROG	Stem cell	Stem/Progenitor
+PROG_LINK	Tumour	Tumour
+PROMONO	Immune	Immune
+PROMONO_LIKE	Tumour	Tumour
+HSC_PROG		Stem/Progenitor
+HSC_PROG_LIKE		Tumour
+MYELOID		Immune
+MYELOID_LIKE		Tumour

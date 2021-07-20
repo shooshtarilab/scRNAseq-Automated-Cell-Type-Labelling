@@ -1,0 +1,10 @@
+Tue Dec 15 2020 14:47:56
+
+
+Options used:
+-i	infile_mat	tme_inputs/darmanis_glioblastoma/seurat_fqn_E_xy_matrix.tsv
+-c	infile_signature	seurat_output/dg_results/GMT_PERMUTATIONS/dg_seurat_fqn.percent100.perm1.gmt
+-t	type_signature	gmt
+-g	infile_cell_types	tme_inputs/darmanis_glioblastoma/seurat_gold_std.tsv
+-o	outdir	seurat_output/dg_results/METANEIGHBOR_BINARY_PERMUTATIONS/
+-p	prefix_outfiles	dg_seurat_fqn.percent100.perm1

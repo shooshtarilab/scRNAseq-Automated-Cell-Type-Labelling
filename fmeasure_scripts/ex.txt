@@ -1,0 +1,8 @@
+C:
+    b cell <- 
+    t cell
+    macrophage
+
+K:
+    t cell <-
+    b cell

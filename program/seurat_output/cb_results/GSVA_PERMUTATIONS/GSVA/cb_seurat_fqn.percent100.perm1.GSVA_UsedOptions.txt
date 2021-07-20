@@ -1,0 +1,10 @@
+Wed Dec 09 2020 11:51:56
+
+
+Options used:
+-i	infile_mat	tme_inputs/chung_breast/seurat_fqn_E_xy_matrix.tsv
+-c	infile_gmt	seurat_output/cb_results/GMT_PERMUTATIONS/cb_seurat_fqn.percent100.perm1.gmt
+-o	outdir	seurat_output/cb_results/GSVA_PERMUTATIONS/
+-p	prefix_outfiles	cb_seurat_fqn.percent100.perm1
+-e	pvalue_cutoff	0.05
+-f	fdr_cutoff	0.1

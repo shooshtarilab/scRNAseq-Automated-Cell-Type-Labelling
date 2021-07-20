@@ -1,0 +1,8 @@
+Warning message:
+no DISPLAY variable so Tk is not available 
+Read 7 records
+Read 254 items
+
+real	0m10.339s
+user	0m4.367s
+sys	0m1.915s

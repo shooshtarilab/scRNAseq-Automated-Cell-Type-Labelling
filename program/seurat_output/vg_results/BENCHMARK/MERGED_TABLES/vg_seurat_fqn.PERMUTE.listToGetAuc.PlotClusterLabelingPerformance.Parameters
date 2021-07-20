@@ -1,0 +1,19 @@
+
+#################################################################
+# Javier Diaz -- 
+# javier.diazmejia@gmail.com
+#################################################################
+
+
+#################################################################
+######################### PARAMETERS ############################
+#################################################################
+
+/home/erik/Desktop/program/bin/perl_programs/obtains_performance_plots_from_cluster_labelings.pl
+-path_outfiles 	seurat_output/vg_results_filtered/BENCHMARK/MERGED_TABLES/
+-infile_list_infiles 	seurat_output/vg_results_filtered/vg_seurat_fqn.PERMUTE.listToGetAuc.tsv
+-infile_gold_standards 	tme_inputs/van_galen/filtered_seurat_gold_std.tsv
+-use_graphics_device 	NA
+-cex_labels 	NA
+-lwd 	NA
+-print_plot_ticks_labels_legend 	NA

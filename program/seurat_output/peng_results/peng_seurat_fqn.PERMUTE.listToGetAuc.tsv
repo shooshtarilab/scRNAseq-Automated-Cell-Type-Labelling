@@ -1,0 +1,5 @@
+seurat_outputs/peng_results/CIBERSORT_BINARY_PERMUTATIONS/CIBERSORT/peng_seurat_fqn.percent100.perm1.CIBERSORT_enrichment_scores.tsv	CIBERSORT_BINARY__100__1	E69F00
+seurat_outputs/peng_results/GSEA_PERMUTATIONS/GSEA/peng_seurat_fqn.percent100.perm1/peng_seurat_fqn.percent100.perm1.GSEA.Pval.Unfiltered.pos.mLog.mat.tsv	GSEA__100__1	CC79A7
+seurat_outputs/peng_results/GSVA_PERMUTATIONS/GSVA/peng_seurat_fqn.percent100.perm1.GSVA_enrichment_scores.tsv	GSVA__100__1	1E90FF
+seurat_outputs/peng_results/METANEIGHBOR_BINARY_PERMUTATIONS/METANEIGHBOR/peng_seurat_fqn.percent100.perm1.MetaNeighborUS_AUROC.tsv	METANEIGHBOR_BINARY__100__1	FFD700
+seurat_outputs/peng_results/ORA_PERMUTATIONS/ORA/peng_seurat_fqn.percent100.perm1.ORA.Pval.Uncorrected.cutoff_pos.mLog.mat.tsv	ORA__100__1	D55E00

@@ -1,0 +1,12 @@
+Wed Dec 16 2020 13:22:10
+
+
+Options used:
+-i	infile_mat	seurat_outputs/peng_results/BENCHMARK/MERGED_TABLES/peng_seurat_fqn.PERMUTE.listToGetAuc.merged.tsv
+-c	infile_colours	NA
+-o	outdir	seurat_outputs/peng_results/BENCHMARK/MERGED_TABLES/PERFORMANCE_PLOTS
+-p	prefix_outfiles	peng_seurat_fqn.PERMUTE.listToGetAuc
+-l	lwd	NA
+-w	print_plot_ticks_labels_legend	NA
+-x	cex_labels	NA
+-d	graphics_device	NA

@@ -1,0 +1,10 @@
+Wed Dec 16 2020 13:21:20
+
+
+Options used:
+-i	infile_mat	tme_inputs/peng_pancreatic/seurat_fqn_E_xy_matrix.tsv
+-c	infile_signature	seurat_outputs/peng_results/GMT_PERMUTATIONS/peng_seurat_fqn.percent100.perm1.gmt
+-t	type_signature	gmt
+-g	infile_cell_types	tme_inputs/peng_pancreatic/seurat_gold_std.tsv
+-o	outdir	seurat_outputs/peng_results/METANEIGHBOR_BINARY_PERMUTATIONS/
+-p	prefix_outfiles	peng_seurat_fqn.percent100.perm1

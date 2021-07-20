@@ -1,0 +1,25 @@
+Wed Dec 09 2020 12:10:44
+
+
+Options used:
+-i	infile_mat	tme_inputs/tirosh_melanoma/seurat_fqn_E_xy_matrix.tsv
+-c	infile_signature_gmt	tme_inputs/tirosh_melanoma/gene_signatures.gmt
+-g	infile_gold	tme_inputs/tirosh_melanoma/seurat_gold_std.tsv
+-t	permute_gmt	y
+-u	propagate_permuted_gmt_to_profiles	n
+-d	infile_signature_profile	NA
+-s	sample_percentages	100,100,0
+-r	iterations	1-1
+-m	software_to_run	GSEA,GSVA,METANEIGHBOR_BINARY,ORA,CIBERSORT_BINARY
+-n	software_to_auc	GSEA,GSVA,METANEIGHBOR_BINARY,ORA,CIBERSORT_BINARY
+-v	generate_violin_plots	y
+-a	roc_auc_violin_plot_y_axes_limits	0.4,1
+-b	pr_auc_violin_plot_y_axes_limits	0,1
+-k	roc_horizontal_guide_line	NA
+-l	pr_horizontal_guide_line	NA
+-w	print_plot_ticks_labels_software	all
+-e	plot_height	1
+-p	prefix_outfiles	tm_seurat_fqn
+-o	outdir	seurat_output/tm_results/
+-y	ora_use_values_or_ranks	ranks
+-z	ora_mat_cutoff	2000
