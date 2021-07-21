@@ -122,7 +122,7 @@ main_figures.ipynb #generate MOST of the main figures
     #times/df_coef.tsv #FROM PING
     #performance/seurat/bigdf.tsv
 
-subsampling_all_cells/looking_to_automate_singletons.ipynb #generate figures for imbalanced experiment
+subsampling_all_cells/singletons.ipynb #generate figures for imbalanced experiment
     #DATADIR IS performance/seurat
         #DATADIR/*classification_report.tsv
     #data/Lambrechts_LC_800.tsv
@@ -134,7 +134,7 @@ subsampling_all_cells/looking_to_automate_singletons.ipynb #generate figures for
     #ALL ARE FROM PING
 
 
-rare_cell_types.ipynb #make the rare cell types plot
+underrepresented_cell_types.ipynb #make the rare cell types plot
     #performance/seurat/bigdf.tsv
 
 patient_data/predictions_results/score_patients.ipynb #generate the patient plots
