@@ -1,4 +1,0 @@
-	Cell
-0	tumor
-1	malignant(1=no,2=yes,0=unresolved)
-2	non-malignant cell type (1=T,2=B,3=Macro.4=Endo.,5=CAF;6=NK)
