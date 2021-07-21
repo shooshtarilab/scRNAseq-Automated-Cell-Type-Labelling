@@ -69,13 +69,9 @@ cell_based_program/* #run cell based labelling algorithms
     R_methods.R #run R methods for cell type prediction
         #arg1 is the dataset to run
         #arg2 is the relative path to ./data/...
-            #TODO right now the counts files are in a subfolder
-            #might need to change this
     Python_methods.py #run most python methods
         #args1 is path to data
         #args2 is the dataset
-            #TODO right now the counts files are in a subfolder
-            #might need to change this
             #TODO need to make sure this reads the labels properly
     run_LAmbDA.py
         #args1 is path to data
@@ -116,7 +112,7 @@ result_gathering.ipynb #gather predictions from cluster labelling outputs
     #my timing wrappers are separate from the wrappers that actually create the output
         #i would essentially need to run everything twice to get the time results
 
-sensitivity_plots.ipynb #score the algorithms
+score_all_methods.ipynb #score the algorithms
     #predictions/*_predictions.tsv
 
 main_figures.ipynb #generate MOST of the main figures
