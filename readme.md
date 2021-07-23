@@ -17,6 +17,12 @@ scipy, scikit-learn, matplotlib, and seaborn, then run main_figures.ipynb,
 singletons.ipynb, underrepresented_cell_types.ipynb, score_patients.ipynb, and
 supplemental_figures.ipynb 
 
+Most of the jupyter notebooks have their last run saved, so the outputs of the 
+code can be evaluated without needing to run the cells again and also target 
+relative file paths, allowing users to clone the repo and run the notebooks 
+without having to modify file paths within the notebook (provided they are run 
+on Linux or macOS since all file paths use "/" as a directory separator.)
+
 run_order.sh contains more information on what files are input to each script,
 and run_short_example.sh has examples on how to call some scripts for one 
 dataset.
