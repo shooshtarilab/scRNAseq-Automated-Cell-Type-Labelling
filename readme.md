@@ -28,13 +28,13 @@ and run_short_example.sh has examples on how to call some scripts for one
 dataset.
 
 ### Preprocessing Scripts
-* ./program/runs_adobo.py
+* [./program/runs_adobo.py](./program/runs_adobo.py)
     * Runs adobo predictions and normalises the data using FQN
     * Inputs: `cluster.csv` and `counts.tsv.xz` file for each dataset 
     * Outputs: Adobo predictions file and `fqn.tsv.xz` (fqn normalised expression)
     * Arguments: The path to the counts file, the path to the clusters file, and
      the output path for the predictions
-* ./program/tme_inputs/avg_expr.ipynb
+* [./program/tme_inputs/avg_expr.ipynb](./program/tme_inputs/avg_expr.ipynb)
     * Reads in the counts and fqn gene x cell matrices and computes the average 
     expression per cluster
     * Inputs: `counts.tsv.xz`, `fqn.tsv.xz` and `clusters.csv` for each dataset
@@ -43,7 +43,7 @@ dataset.
     * Arguments: See python notebook - paths to the input and output files
 
 ### Cluster labelling Algorithms
-* ./program/run.sh
+* [./program/run.sh](./program/run.sh)
     * Runs GSEA, GSVA, ORA, MetaNeighbor, and CIBERSORT
     * Inputs: Average expression per cluster for all datasets, gold standards 
     for clusters, and cell type signature gene sets
@@ -56,7 +56,7 @@ dataset.
     the jar files for each method and place them in `./program/`
         * [CIBERSORT](https://cibersort.stanford.edu/download.php)
         * [GSEA](http://software.broadinstitute.org/gsea/downloads.jsp)
-* ./program/sccatch/run_sccatch.R
+* [./program/sccatch/run_sccatch.R](./program/sccatch/run_sccatch.R)
     * Runs scCATCH predictions
     * Inputs: `counts.tsv.xz` and `clusters.csv` for each dataset
     * Outputs: Prints scCATCH predictions to console
@@ -69,7 +69,7 @@ dataset.
     * Examples for some of the datasets are present in `./program/sccatch/*.sh`
 
 ### Cell Based Labelling Algorithms
-* ./cell_based_program/CV.R
+* [./cell_based_program/CV.R](./cell_based_program/CV.R)
     * Generates the 5-fold cross validation groups as .Rdata files
     * Inputs: A file containing labels for each cell
     * Outputs: An Rdata file containing cross validation groups
@@ -77,19 +77,19 @@ dataset.
         * Path to the genes x cells counts file
         * Path to the folder in which to save the Rdata file
         * Path to the folder containing the cell labels
-* ./cell_based_program/CV_r2py.py
+* [./cell_based_program/CV_r2py.py](./cell_based_program/CV_r2py.py)
     * Converts the Rdata files from CV.R to pkl files for the python methods
     * Inputs: The Rdata file
     * Outputs: The Pkl file, in the same directory as the Rdata file
     * Arguments: Path to the folder containing the Rdata files  
-* ./cell_based_program/R_methods.R
+* [./cell_based_program/R_methods.R](./cell_based_program/R_methods.R)
     * Runs all R based methods on a single dataset
     * Inputs: A counts matrix, labels file, and Rdata CV file for the dataset
     * Outputs: Predictions in ./cell_based_program/output/\<dataset\>
     * Arguments:
         * The name of the dataset
         * The path to the folder containing the counts matrix, labels, and Rdata
-* ./cell_based_program/Python_methods.py
+* [./cell_based_program/Python_methods.py](./cell_based_program/Python_methods.py)
     * Runs all python based methods on a single dataset
         * Lambda and scVI have their own scripts
     * Inputs: A counts matrix, labels file, and pkl CV file for the dataset
@@ -98,14 +98,14 @@ dataset.
         * The path to the folder containing the counts, labels, and pkl
         * The name of the dataset
     * **DEPENDENCIES IN ./cell_based_program/OtherMethods_packages.txt**
-* ./cell_based_program/run_LAmbDA.py
+* [./cell_based_program/run_LAmbDA.py](./cell_based_program/run_LAmbDA.py)
     * Runs LAmbDA on a single dataset
     * Inputs: A counts matrix, labels file, and pkl CV file for the dataset
     * Outputs: Predictions in ./cell_based_program/output/\<dataset\>
     * Arguments:
         * The path to the folder containing the counts, labels, and pkl
         * The name of the dataset
-* ./cell_based_program/run_scVItool.py
+* [./cell_based_program/run_scVItool.py](./cell_based_program/run_scVItool.py)
     * Runs scVI on a single dataset
     * Inputs: A counts matrix, labels file, and pkl CV file for the dataset
     * Outputs: Predictions in ./cell_based_program/output/\<dataset\>
@@ -115,22 +115,22 @@ dataset.
     * **DEPENDENCIES IN ./cell_based_program/scANVI_packages.txt**
         * This requires a different version of tensorflow, it is recommended
         to use a virtual environment to manage it.
-* ./cell_based_program/other_scripts/results_table.ipynb
+* [./cell_based_program/other_scripts/results_table.ipynb](./cell_based_program/other_scripts/results_table.ipynb)
     * Gathers the predictions from all methods into a single file
-* ./cell_based_program/other_scripts/time_sim.py
+* [./cell_based_program/other_scripts/time_sim.py](./cell_based_program/other_scripts/time_sim.py)
     * Gathers the running times into a single file
-* ./cell_based_program/other_scripts/time_bar_plot.ipynb
+* [./cell_based_program/other_scripts/time_bar_plot.ipynb](./cell_based_program/other_scripts/time_bar_plot.ipynb)
     * Makes bar plots of the running time as seen in our supplemental figures
-* ./cell_based_program/other_scripts/time_coefficient_plot.ipynb
+* [./cell_based_program/other_scripts/time_coefficient_plot.ipynb](./cell_based_program/other_scripts/time_coefficient_plot.ipynb)
     * Makes the dataframe needed for the time coefficient plot generated in 
     main_figures.ipynb
-* ./cell_based_program/other_scripts/heatmap.ipynb
+* [./cell_based_program/other_scripts/heatmap.ipynb](./cell_based_program/other_scripts/heatmap.ipynb)
     * Makes the dataframe needed for the running time heatmap generated in 
     main_figures.ipynb
 
 ## **NOTE THAT ALL FOLLOWING SCRIPTS ASSUME THAT ALL ALGORITHMS HAVE BEEN RUN FOR ALL DATASETS AND MAY NOT WORK WITHOUT ALL DATA PRESENT** 
 ### Post-processing
-* result_gathering.ipynb
+* [result_gathering.ipynb](result_gathering.ipynb)
     * Gathers the predictions from the cluster labelling methods and combines 
     them with the predictions from the cell based methods
     * **NOTE** Because adobo and scCATCH are semi-supervised and use their own 
@@ -139,19 +139,19 @@ dataset.
     cell is a T Cell, but it may be predicted to be a memory T Cell or helper T 
     Cell). I could not find a way to make these match automatically, so the 
     labels are renamed manually prior to running this script
-* fmeasure_scripts/F-Measure-Analysis-Bootstrap.R
+* [fmeasure_scripts/F-Measure-Analysis-Bootstrap.R](fmeasure_scripts/F-Measure-Analysis-Bootstrap.R)
     * Obtains bootstrapped F1 Scores for each algorithm on each dataset
     * **Disclaimer** This takes a _long_ time to run. Multiple hours, especially
     if it is not modified to exlude some algorithms or the largest datasets.
     * Inputs: Prediction files for each dataset
     * Ouputs: Large dataframe containing bootstrapped F1 scores for each dataset
-* score_all_methods.ipynb
+* [score_all_methods.ipynb](score_all_methods.ipynb)
     * Obtains per-class F1 score among other metrics for all datasets and 
     algorithms, gathered into a single large dataframe
     * Inputs: Prediction files for each dataset
     * Ouputs: Large dataframe containing per-class as well as macro and micro 
     averaged scores for each dataset-algorithm pair
-* main_figures.ipynb
+* [main_figures.ipynb](main_figures.ipynb)
     * Generates most of the main figures for our paper
     * Inputs:
         * data_sizes.tsv: A hardcoded dataframe outlining aspects of the 
@@ -165,7 +165,7 @@ dataset.
         * performance/seurat/bigdf.tsv: The large dataframe output 
         from score_all_methods.ipynb
     * Outputs: plots for the paper under ./plots
-* underrepresented_cell_types.ipynb
+* [underrepresented_cell_types.ipynb](underrepresented_cell_types.ipynb)
     * Makes the main and supplemental underrepresented cell types plots
     * Inputs: performance/seurat/bigdf.tsv: The large dataframe output from 
     score_all_methods.ipynb
@@ -173,11 +173,11 @@ dataset.
 
 ### Subsampling Experiment
 These scripts subsample the datasets as outlined in our paper
-* subsampling_all_cells/sub_sample.py
+* [subsampling_all_cells/sub_sample.py](subsampling_all_cells/sub_sample.py)
     * Creates subsampled datasets to use in the cell-based algorithms
     * After running this script, regenerate the CV folds from the subsampled 
     data and run the cell based algorithms again
-* subsampling_all_cells/looking_to_automate_singletons.ipynb
+* [subsampling_all_cells/looking_to_automate_singletons.ipynb](subsampling_all_cells/looking_to_automate_singletons.ipynb)
     * Evaluates the performance of all algorithms on the subsampled datasets vs 
     the original performance
     * Creates all plots related to this analysis seen in our paper
