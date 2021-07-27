@@ -11,11 +11,7 @@ paper. They can be re-run to replicate the results, but this can take an
 extremely long time.
 
 As such, we have included the inputs and outputs for the most relevant stages of
-the pipeline, hopefully facilitating the ease of review. To generate the figures
-in our paper, simply clone the repo, install python, jupyter, pandas, numpy,
-scipy, scikit-learn, matplotlib, and seaborn, then run main_figures.ipynb,
-singletons.ipynb, underrepresented_cell_types.ipynb, score_patients.ipynb, and
-supplemental_figures.ipynb 
+the pipeline, hopefully facilitating the ease of review.
 
 Most of the jupyter notebooks have their last run saved, so the outputs of the 
 code can be evaluated without needing to run the cells again and also target 
@@ -27,6 +23,32 @@ run_order.sh contains more information on what files are input to each script,
 and run_short_example.sh has examples on how to call some scripts for one 
 dataset.
 
+## Replicating All Data Science
+Since running the complete prediction pipeline for this project takes a large
+amount of compute resources (weeks of running time and hundreds of gigabytes of
+memory), we have provided as many of our results and inputs as possible.
+
+In order to re-run only the post-processing and data-science results, users can
+simply clone the repo, install the listed pacakges, and run the following
+notebooks/scripts. (To run on windows you will need to replace "/" with "\" in
+file paths)
+* [main_figures.ipynb](main_figures.ipynb)
+* [singletons.ipynb](./subsampling_all_cells/singletons.ipynb)
+* [underrepresented_cell_types.ipynb](underrepresented_cell_types.ipynb)
+* [score_patients.ipynb](./patient_data/predictions_results/score_patients.ipynb)
+* [supplemental_figures.ipynb](supplemental_figures.ipynb)
+* Dependencies (I've listed the version originally used, but newer releases
+should work just as well)
+    * Python 3.8
+    * jupyter 1.0.0
+    * pandas 1.1.3
+    * numpy 1.18.5
+    * scipy 1.5.3
+    * scikit-learn 0.23.2
+    * matplotlib 3.3.2
+    * seaborn 0.11.0
+
+--------------------------------------------------------------------------------
 ### [Preprocessing Scripts](./preprocessing.md)
 * These scripts prepare inputs for the cluster labelling algorithms, namely by
 normalising the data and getting average expression for each cluster
@@ -69,13 +91,13 @@ cell based algorithms must be re-run for each dataset as part of this analysis
 
 ## Package Versions
 * Python Version 3.8
-    * jupyter 
-    * pandas
-    * numpy
-    * scipy
-    * scikit-learn
-    * matplotlib
-    * seaborn
+    * jupyter 1.0.0
+    * pandas 1.1.3
+    * numpy 1.18.5
+    * scipy 1.5.3
+    * scikit-learn 0.23.2
+    * matplotlib 3.3.2
+    * seaborn 0.11.0
     * adobo
 * R Version 3.5.2
     * optparse
