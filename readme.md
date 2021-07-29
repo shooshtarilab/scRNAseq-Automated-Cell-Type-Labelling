@@ -23,6 +23,12 @@ run_order.sh contains more information on what files are input to each script,
 and run_short_example.sh has examples on how to call some scripts for one 
 dataset.
 
+Each section listed below is modular, and the inputs needed are provided so
+that they can be run independent of the others. You could for instance run
+the pre-processing and data science/plot generation modules without re-running
+the entire predictions pipeline (as the prediction pipeline takes a very long
+time)
+
 ## Replicating All Data Science
 Since running the complete prediction pipeline for this project takes a large
 amount of compute resources (weeks of running time and hundreds of gigabytes of
